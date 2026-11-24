@@ -29,7 +29,7 @@ No computed numbers are hardcoded. All coordinates, table evaluations, and verte
 
 ## 3. Directory Structure
 ```
-M3_AnimationVideo_Functions_StudentID/
+M3_AnimationVideo_Functions_E25B070507/
 ├── _Video.mp4                 # Final rendered 1080p MP4 video
 ├── _Code/
 │   ├── config.py              # Visual themes, colors (blue=in, orange=out, green=graph), fonts

@@ -37,7 +37,7 @@ class MainVideo(Scene):
         op_title = Text("Functions and Their Graphs", font_size=TITLE_FONT_SIZE + 6, color=COLOR_HIGHLIGHT)
         op_subtitle = MathTex(r"f(x) = x^2 - 4x + 3", font_size=MATH_FONT_SIZE + 8, color=COLOR_GRAPH)
         op_course = Text("Linear Algebra and Calculus (M3) • Internal Assessment Project", font_size=LABEL_FONT_SIZE + 2, color=COLOR_TEXT)
-        op_meta = Text("Student Name: [Your Name Here]   |   Student ID: [StudentID]", font_size=LABEL_FONT_SIZE, color=COLOR_SUBTEXT)
+        op_meta = Text("Student Name: Amrit Anand   |   Student ID: E25B070507", font_size=LABEL_FONT_SIZE, color=COLOR_SUBTEXT)
 
         op_group = VGroup(op_title, op_subtitle, op_course, op_meta).arrange(DOWN, buff=0.45)
 

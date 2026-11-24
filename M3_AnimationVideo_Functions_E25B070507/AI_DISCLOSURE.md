@@ -3,8 +3,8 @@
 **Course:** Linear Algebra and Calculus (M3)  
 **Assessment:** Internal Assessment - Project Option 1: Animation Video  
 **Project Title:** Single-Variable Functions and Graphs: $f(x) = x^2 - 4x + 3$  
-**Student Name:** [Your Name Here]  
-**Student ID:** [Your Student ID]  
+**Student Name:** Amrit Anand  
+**Student ID:** E25B070507  
 
 In compliance with the M3 Assessment Policy on Originality and AI tool disclosure:
 
