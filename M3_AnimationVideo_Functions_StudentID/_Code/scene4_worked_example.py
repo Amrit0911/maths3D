@@ -62,7 +62,7 @@ class Scene4WorkedExample(Scene):
 
         self.play(FadeIn(y_int_group), run_time=1.5)
         self.play(FadeIn(pt_y_int), Flash(pt_y_int[1], color=COLOR_OUTPUT), run_time=1.0)
-        self.wait(2.0)
+        self.wait(15.0)
 
         # ----------------------------------------------------------------------
         # 3. Step 2: Roots / X-Intercepts (Solve f(x) = 0)
@@ -88,7 +88,7 @@ class Scene4WorkedExample(Scene):
             Flash(pt_root_1[1], color=COLOR_INPUT), Flash(pt_root_2[1], color=COLOR_INPUT),
             run_time=1.2
         )
-        self.wait(2.5)
+        self.wait(19.0)
 
         # ----------------------------------------------------------------------
         # 4. Step 3: Vertex via Symmetry & Evaluation
@@ -118,7 +118,7 @@ class Scene4WorkedExample(Scene):
         # Narration: "Substituting x = 2 evaluates f(2) = -1. This minimum point is the vertex (2, -1)."
         self.play(FadeIn(vertex_group), Create(axis_line), run_time=2.0)
         self.play(FadeIn(pt_vertex), Flash(pt_vertex[1], color=COLOR_HIGHLIGHT), run_time=1.2)
-        self.wait(4.0)
+        self.wait(25.8)
 
         # Clear Scene
         self.play(

@@ -28,7 +28,7 @@ class Scene1Hook(Scene):
 
         # Narration: "How can we take these dynamic relationships and picture them clearly with mathematics?"
         self.play(Write(title), run_time=2.0)
-        self.wait(1.5)
+        self.wait(3.0)
 
         # ----------------------------------------------------------------------
         # 2. Example 1: Phone Battery Life over Time
@@ -61,7 +61,7 @@ class Scene1Hook(Scene):
             run_time=2.0
         )
         self.play(Create(batt_curve), run_time=2.5)
-        self.wait(1.5)
+        self.wait(4.5)
 
         # ----------------------------------------------------------------------
         # 3. Example 2: Ball Height over Time
@@ -94,7 +94,7 @@ class Scene1Hook(Scene):
             run_time=2.0
         )
         self.play(Create(ball_curve), run_time=2.5)
-        self.wait(2.0)
+        self.wait(5.0)
 
         # ----------------------------------------------------------------------
         # 4. Central Thesis & Transition
@@ -109,7 +109,7 @@ class Scene1Hook(Scene):
         ).move_to(thesis_box.get_center())
 
         self.play(FadeIn(thesis_box), Write(thesis_text), run_time=2.0)
-        self.wait(4.0)
+        self.wait(7.0)
 
         # Clear scene cleanly for next topic
         self.play(

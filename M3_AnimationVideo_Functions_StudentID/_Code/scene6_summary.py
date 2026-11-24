@@ -38,7 +38,7 @@ class Scene6Summary(Scene):
         t1 = Text("1. Unique Output: Each input x has exactly one f(x) (Vertical Line Test).", font_size=BODY_FONT_SIZE - 2, color=COLOR_TEXT).move_to(card1)
 
         self.play(FadeIn(card1), Write(t1), run_time=1.2)
-        self.wait(1.5)
+        self.wait(3.5)
 
         # Takeaway 2
         # Narration: "Two: The graph is the complete geometric assembly of all pairs (x, f(x))."
@@ -47,7 +47,7 @@ class Scene6Summary(Scene):
         t2 = Text("2. Graph as Geometry: The curve represents all ordered pairs (x, f(x)).", font_size=BODY_FONT_SIZE - 2, color=COLOR_TEXT).move_to(card2)
 
         self.play(FadeIn(card2), Write(t2), run_time=1.2)
-        self.wait(1.5)
+        self.wait(3.5)
 
         # Takeaway 3
         # Narration: "Three: Algebra and geometry mirror each other: roots, intercepts, and extrema are visible landmarks."
@@ -56,7 +56,7 @@ class Scene6Summary(Scene):
         t3 = Text("3. Analytical Power: Roots, intercepts, vertex, and range can be read directly.", font_size=BODY_FONT_SIZE - 2, color=COLOR_TEXT).move_to(card3)
 
         self.play(FadeIn(card3), Write(t3), run_time=1.2)
-        self.wait(3.0)
+        self.wait(5.0)
 
         # ----------------------------------------------------------------------
         # 3. Credits & AI Disclosure Frame
@@ -80,7 +80,7 @@ class Scene6Summary(Scene):
         credits_group = VGroup(c1, c2, c3, c4, c5).arrange(DOWN, buff=0.35).next_to(credits_title, DOWN, buff=0.6)
 
         self.play(FadeIn(credits_title), FadeIn(credits_group), run_time=2.0)
-        self.wait(4.0)
+        self.wait(7.2)
 
         self.play(FadeOut(credits_title), FadeOut(credits_group), run_time=1.5)
         self.wait(1.0)

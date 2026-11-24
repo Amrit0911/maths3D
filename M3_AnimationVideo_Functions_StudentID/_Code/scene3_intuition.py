@@ -93,7 +93,7 @@ class Scene3Intuition(Scene):
             self.play(FadeIn(row_grp), run_time=0.6)
             self.play(FadeIn(pt_marker), run_time=0.8)
             rendered_dots.append(pt_marker)
-            self.wait(0.5)
+            self.wait(4.0)
 
             curr_y -= 0.45
 
@@ -115,7 +115,7 @@ class Scene3Intuition(Scene):
             self.play(FadeIn(pt_bound), run_time=0.8)
             rendered_dots.append(pt_bound)
 
-        self.wait(1.5)
+        self.wait(7.5)
 
         # ----------------------------------------------------------------------
         # 5. Continuous Curve with Tracer Dot
@@ -133,7 +133,7 @@ class Scene3Intuition(Scene):
             rate_func=linear
         )
         self.play(FadeOut(tracer_dot), run_time=0.5)
-        self.wait(1.5)
+        self.wait(8.5)
 
         # ----------------------------------------------------------------------
         # 6. The Vertical Line Test
@@ -156,7 +156,7 @@ class Scene3Intuition(Scene):
             run_time=3.5,
             rate_func=smooth
         )
-        self.wait(2.0)
+        self.wait(14.0)
 
         # Clear Scene
         self.play(

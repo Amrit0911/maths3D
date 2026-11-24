@@ -52,7 +52,7 @@ class Scene5Interpretation(Scene):
         domain_label.to_edge(LEFT, buff=0.8).shift(UP * 1.8)
 
         self.play(Create(domain_line), FadeIn(domain_label), run_time=1.5)
-        self.wait(1.0)
+        self.wait(6.0)
 
         # Narration: "Because the parabola opens upwards with minimum at y = -1, the Range is [-1, infinity)."
         range_line = Line(
@@ -65,7 +65,7 @@ class Scene5Interpretation(Scene):
         range_label.next_to(domain_label, DOWN, buff=0.5, aligned_edge=LEFT)
 
         self.play(Create(range_line), FadeIn(range_label), run_time=1.5)
-        self.wait(1.5)
+        self.wait(7.0)
 
         # ----------------------------------------------------------------------
         # 3. Increasing and Decreasing Branches
@@ -82,12 +82,12 @@ class Scene5Interpretation(Scene):
 
         # Narration: "To the left of x = 2, the function slopes downward: it is strictly decreasing."
         self.play(Create(curve_dec), FadeIn(dec_label), run_time=2.0)
-        self.wait(1.0)
+        self.wait(6.0)
 
         # Narration: "At x = 2, it reaches its turning point. To the right of x = 2, it slopes upward: strictly increasing."
         pt_vertex = create_point_marker(axes, 2.0, -1.0, dot_color=COLOR_HIGHLIGHT, radius=0.08)
         self.play(Create(curve_inc), FadeIn(inc_label), FadeIn(pt_vertex), run_time=2.0)
-        self.wait(3.5)
+        self.wait(9.0)
 
         # Clear Scene
         self.play(

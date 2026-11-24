@@ -25,7 +25,7 @@ class Scene2Concept(Scene):
         title = Text("The Concept of a Function", font_size=TITLE_FONT_SIZE, color=COLOR_HIGHLIGHT)
         title.to_edge(UP, buff=0.6)
         self.play(Write(title), run_time=1.5)
-        self.wait(1.0)
+        self.wait(4.0)
 
         # ----------------------------------------------------------------------
         # 2. The Function Machine Visual Box
@@ -60,7 +60,7 @@ class Scene2Concept(Scene):
             FadeIn(output_label),
             run_time=2.5
         )
-        self.wait(2.0)
+        self.wait(7.0)
 
         # ----------------------------------------------------------------------
         # 3. Particle Flow Animation: Demonstrating an Example (x = 4 -> f(4) = 3)
@@ -80,7 +80,7 @@ class Scene2Concept(Scene):
 
         self.play(FadeIn(token_out), run_time=0.6)
         self.play(token_out.animate.move_to(RIGHT * 4.2 + UP * 0.2), run_time=1.8)
-        self.wait(1.5)
+        self.wait(6.5)
 
         # ----------------------------------------------------------------------
         # 4. Formal Definitions: Domain and Range
@@ -106,7 +106,7 @@ class Scene2Concept(Scene):
         def_content = VGroup(domain_row, range_row).arrange(DOWN, buff=0.25).move_to(def_card.get_center())
 
         self.play(FadeIn(def_card), FadeIn(def_content), run_time=2.0)
-        self.wait(5.0)
+        self.wait(18.0)
 
         # Clear Scene
         self.play(
