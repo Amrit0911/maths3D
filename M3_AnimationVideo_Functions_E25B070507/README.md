@@ -1,7 +1,12 @@
 # Linear Algebra and Calculus (M3) - Animation Video Project
 ## Topic: Single-variable Functions and Graphs ($f(x) = x^2 - 4x + 3$)
+**Student Name:** Amrit Anand  
+**Student ID:** `E25B070507`  
 
-This repository contains the complete animation source code, video rendering pipeline, mathematical derivation scripts, and supporting documentation for Option 1 of the M3 Internal Assessment (10% weightage).
+This repository contains the complete animation source code, video rendering pipeline, mathematical verification tests, storyboard PDF, and supporting documentation for Option 1 of the M3 Internal Assessment (10% weightage).
+
+> **PUBLIC REPOSITORY REMINDER:**  
+> This repository must remain **PUBLIC** for submission and grading verification.
 
 ---
 
@@ -32,22 +37,27 @@ No computed numbers are hardcoded. All coordinates, table evaluations, and verte
 M3_AnimationVideo_Functions_E25B070507/
 ├── _Video.mp4                 # Final rendered 1080p MP4 video
 ├── _Code/
-│   ├── config.py              # Visual themes, colors (blue=in, orange=out, green=graph), fonts
-│   ├── helpers.py             # Single source of truth f(x), axes constructor, marker helpers
-│   ├── scene1_hook.py         # Scene 1: Real-world hook & motivation (35s)
-│   ├── scene2_concept.py      # Scene 2: Function machine & formal definitions (50s)
-│   ├── scene3_intuition.py    # Scene 3: Step-by-step point plotting & vertical line test (75s)
-│   ├── scene4_worked_example.py # Scene 4: Intercept, factoring roots, vertex derivation (75s)
-│   ├── scene5_interpretation.py # Scene 5: Domain, range, increasing/decreasing intervals (40s)
-│   ├── scene6_summary.py      # Scene 6: Three takeaways, credits, AI disclosure (30s)
-│   ├── main_video.py          # Master orchestrator with Opening (5s) and Closing scenes
-│   ├── render.sh              # 1080p 30fps bash render script
-│   ├── merge_audio.sh         # FFmpeg voice narration and music muxing script
-│   └── requirements.txt       # Python dependencies
-├── Storyboard.md              # 6-scene structured academic storyboard
-├── AI_DISCLOSURE.md           # Formal declaration of AI tools used (as required)
-├── CREDITS.md                 # Textbook and music citations
-└── README.md                  # Project documentation & run guide
+│   ├── config.py                  # Visual themes, colors (blue=in, orange=out, green=graph), fonts
+│   ├── helpers.py                 # Single source of truth f(x), axes constructor, marker helpers
+│   ├── scene1_hook.py             # Scene 1: Real-world hook & motivation (35s)
+│   ├── scene2_concept.py          # Scene 2: Function machine & formal definitions (50s)
+│   ├── scene3_intuition.py        # Scene 3: Step-by-step point plotting & vertical line test (75s)
+│   ├── scene4_worked_example.py   # Scene 4: Intercept, factoring roots, vertex derivation (75s)
+│   ├── scene5_interpretation.py   # Scene 5: Domain, range, increasing/decreasing intervals (40s)
+│   ├── scene6_summary.py          # Scene 6: Three takeaways, credits, AI disclosure (30s)
+│   ├── main_video.py              # Master orchestrator with Opening (5s) and Closing scenes
+│   ├── tests/test_math.py         # Automated SymPy unit tests for all mathematical claims
+│   ├── generate_storyboard_pdf.py # Generates Storyboard.pdf via ReportLab
+│   ├── render.sh                  # 1080p 30fps bash render script
+│   ├── merge_audio.sh             # FFmpeg voice narration and music muxing script
+│   └── requirements.txt           # Python dependencies
+├── docs/
+│   └── CODE_WALKTHROUGH.md        # Plain-English viva defense guide
+├── Storyboard.md                  # 6-scene structured academic storyboard
+├── Storyboard.pdf                 # Formatted PDF storyboard & mathematical specification
+├── AI_DISCLOSURE.md               # Formal declaration of AI tools used (as required)
+├── CREDITS.md                     # Textbook and music citations
+└── README.md                      # Project documentation & run guide
 ```
 
 ---
@@ -101,3 +111,25 @@ To attach voice narration and background audio:
    ```bash
    bash _Code/merge_audio.sh
    ```
+
+
+---
+
+## 5. Mathematical Summary Table (Viva Reference)
+
+| $x$ | Hand Substitution: $f(x) = x^2 - 4x + 3$ | $f(x)$ | Geometric Feature |
+| :---: | :--- | :---: | :--- |
+| **$-1$** | $(-1)^2 - 4(-1) + 3 = 1 + 4 + 3$ | **$8$** | Left boundary point |
+| **$0$** | $0^2 - 4(0) + 3 = 3$ | **$3$** | **$y$-intercept** $(0, 3)$ |
+| **$1$** | $1^2 - 4(1) + 3 = 1 - 4 + 3$ | **$0$** | **Root / $x$-intercept** $(1, 0)$ |
+| **$2$** | $2^2 - 4(2) + 3 = 4 - 8 + 3$ | **$-1$** | **Vertex / Global Minimum** $(2, -1)$ |
+| **$3$** | $3^2 - 4(3) + 3 = 9 - 12 + 3$ | **$0$** | **Root / $x$-intercept** $(3, 0)$ |
+| **$4$** | $4^2 - 4(4) + 3 = 16 - 16 + 3$ | **$3$** | Symmetric pair to $(0, 3)$ |
+| **$5$** | $5^2 - 4(5) + 3 = 25 - 20 + 3$ | **$8$** | Right boundary point |
+
+---
+
+## 6. Verification & Academic Integrity
+- Run `pytest _Code/tests/test_math.py` to verify all mathematical assertions with SymPy.
+- Refer to [docs/CODE_WALKTHROUGH.md](docs/CODE_WALKTHROUGH.md) for the Viva Defense Walkthrough.
+- Refer to [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for the complete disclosure of AI tools used.
